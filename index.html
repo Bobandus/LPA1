@@ -4,61 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Les Petits Annonceurs</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="header">
-    <img src="./logocropped.png" alt="logo" width="70px" height="70px">
-    <div class="navlinks">
-      <a href="#">Header link one</a>
-      <a href="#">Header link two</a>
-      <a href="#">Header link three</a>
-    </div>
-  </div>
-  <div class="top">
-    <div class="topleft">
-        <h1>This Website is awesome</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem ut lectus egestas eleifend. Fusce semper ante eu enim pulvinar, nec porttitor sapien ullamcorper.</p>
-        <button type="button">Sign up</button>
-    </div>
-    <img src="#" alt="This is a placeholder for an image">
-  </div>
-  <div class="info">
-    <h2>Some random information.</h2>
-    <div class="cards">
-        <div class="card">
-            <img>
-            <p>Description</p>
-        </div> 
-        <div class="card">
-            <img>
-            <p>Description</p>
-        </div> 
-        <div class="card">
-            <img>
-            <p>Description</p>
-        </div> 
-        <div class="card">
-            <img>
-            <p>Description</p>
-        </div> 
-    </div>
-  </div>
-  <div class="quote">
-      <h3>I Wish There Was A Way To Know You’re In The Good Old Days Before You've Actually Left Them.</h3>
-      <h4>-Andy Bernard</h4>
-  </div>
-  <div class="cta">
-      <div class="leftcta">
-          <h3>Call to action! It's time!</h3>
-          <p>Sign up for our product by clicking on that button right there!</p>
-      </div>
-      <button type="button">Sign Up</button>
-  </div>
-  <div class="footer">
-      <p>Copyright © The Odin Project 2022</p>
-  </div>
+    <nav class="navbar">
+        <a href="#title-section"><img src="./logo.png" alt="logo" class="navbarlogo"></a>
+        <ul class="navlinks">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Contenu</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>    
+    </nav>   
+
+    <div class="page-wrapper">
+        <div id="title-section" class="title-section">
+            <div class="media-box">
+                <div class="text-box">
+                    <h1>Les Petits Annonceurs</h1>
+                    <p>Affranchissez-vous des frais d’agences externes et apprenez à gérer vos campagnes publicitaires par vous même en quelques heures. Bénéficiez de l’expertise d’un ancien employé de Google.</p>
+                    <button class="media-button" type="button">Sign up</button>
+                </div>         
+                <img class="media-img" src="./media-img.png" alt="This is a placeholder for an image">
+            </div>
+        </div>
+
+        <div id="info-section" class="info-section">
+            <h1 class="title">Les plateformes:</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img" src="./imgchannel/ads.png" alt="Google Ads logo">
+                    <h2>Google Ads</h2>
+                    <div class="card-text">Description Ads</div>
+                </div> 
+                <div class="card">
+                    <img class="card-img" src="./imgchannel/facebook.png" alt="Facebook logo">
+                    <h2>Facebook</h2>
+                    <div class="card-text">Description Facebook</div>
+                </div> 
+                <div class="card">
+                    <img class="card-img" src="./imgchannel/instagram.png" alt="Instagram logo">
+                    <h2>Instagram</h2>
+                    <div class="card-text">Description Instagram</div>
+                </div> 
+                <div class="card">
+                    <img class="card-img" src="./imgchannel/tiktok.png" alt="Tik Tok logo">
+                    <h2>Tik Tok</h2>
+                    <div class="card-text">Description Tik Tok</div>
+                </div> 
+            </div>    
+        </div>    
+
+        <div class="quote-section" id="quote-section">
+            <div class="quote">
+                I Wish There Was A Way To Know You’re In The Good Old Days Before You've Actually Left Them.
+            </div>
+            <p>--Andy Bernard</p>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-box">
+                <div class="leftcta">
+                    <h2>Call to action! It's time!</h2>
+                    <p>Sign up for our product by clicking on that button right there!</p>
+                </div>
+                <button class="email-button" type="button">Sign Up</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright © Les Petits Annonceurs 2022</p>
+        </footer>
+    </div> 
 </body>
 </html>

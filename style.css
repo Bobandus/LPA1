@@ -1,108 +1,110 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+/*
+
+.navbar
+.logo
+.page-wrapper
+.title-section
+    .media-box
+        .text-box
+.info-section
+
+.quote-section
+.cta-section
+html
+
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-.header a {
+a{
+    color: darkgrey;
     text-decoration: none;
-    color: white;
 }
 
-.top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 300px;
-}
+p {
+    color: whitesmoke;
+  }
 
-.top h1 {
+  h1 {
     font-family: "Courier new", Courier, sans-serif;
     font-size: 30px;
     font-weight: extra-bold;
-    color: #F9FAF8;
-}
-
-.topleft {
-    width: 310px;
-}
-
-.top button {
-    font-weight: bold;
-    height: 30px;
-    width: 90px;
-    color: white;
-    background-color: #3882F6;
-    border-radius: 5px;
-    border: none;
-}
-
-.top p {
-    color: rgba(255, 255, 255, 0.76);
-}
-
-.top img {
-    width: 450px;
-    height: 200px;
-    background-color: #E5E7EB;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cards {
-    display: flex;
-    gap: 30px;
-}
-
-.card img {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #3882F6;
-    border-radius: 10px;
-}
-
-.cards p {
+    color: #1F2937;
     text-align: center;
-}
+  }
+  
 
-.quote {
-    background-color: #E5E7EB;
-    height: 300px;
-    max-width: 1400px;
+/*    Navbar    */
+.navbar {
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.quote h4 {
-    align-self: flex-end;
-}
-
-.top,
-.header,
-.footer {
+    width: 100%;
+    /* position: fixed; */
     background-color: #1F2937;
-}
+  }
 
-.cta {
+  .navbarlogo {
+    margin-left: 24px;
+    height: 46px;
+    padding: 10px;
+  }
+
+  .navlinks {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 12px;
+    gap: 15px;
+  }
+
+  /*    Title section    */
+.title-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: #3882F6;
+    background-color: #1F2937;
 }
 
-.leftcta {
-    width: 500px;
+.media-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px 50px 50px;
+    gap: 20px;
+    padding: 30px;
 }
 
-.cta button {
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding-left: 32px;
+}
+
+.text-box h1 {
+    font-family: "Courier new", Courier, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F9FAF8;
+  }
+
+  .media-img {
+    object-fit: cover;
+    flex: 1 1 auto;
+    max-width: 400px;
+    border: 2px solid burlywood;
+    border-radius: 3%;
+    box-shadow: 2px 2px 3px;
+  }
+
+  .media-button {
     font-weight: bold;
     height: 30px;
     width: 90px;
@@ -112,3 +114,88 @@
     border: none;
 }
 
+  /*    Info section    */
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+}
+
+.card-text {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+  /*    Quote section    */
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    padding: 128px;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-section p {
+    text-align: end;
+    color: burlywood;
+}
+
+  /*    CTA section    */
+.cta-section {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
+    display: flex;
+    align-items: center;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 24px;
+    margin: 20px 20px;
+    padding: 15px 100px;
+    max-width: 1100px;
+}
+
+.leftcta h2 {
+    color: whitesmoke;
+}
+
+.leftcta p {
+    padding-right: 30px;
+}
+
+.email-button {
+    font-weight: bold;
+    height: 30px;
+    width: 90px;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 5px;
+    border: 1px solid whitesmoke ;
+}
+
+  /*    Footer    */
+footer p {
+    background-color: #1F2937;
+    padding: 24px;
+    text-align: center;
+}
+
+.page-wrapper {
+    height: 0px;
+}
